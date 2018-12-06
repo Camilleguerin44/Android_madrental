@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorRadius">#cacaca</color>
+    <color name="colorEditViewProfil">#8a8a8a</color>
+    <color name="colorTextViewProfil">#000000</color>
 </resources>
