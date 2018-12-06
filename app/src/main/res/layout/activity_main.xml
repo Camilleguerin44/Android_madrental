@@ -32,7 +32,7 @@
             android:layout_marginTop="130dp"
             android:background="@drawable/edittext"
 
-            android:text="Nom"
+            android:hint="Nom"
             android:gravity="left"
             android:paddingLeft="20dp"
             android:paddingTop="9dp"
@@ -55,7 +55,7 @@
             android:gravity="left"
             android:paddingLeft="20dp"
             android:paddingTop="9dp"
-            android:text="Prénom"
+            android:hint="Prénom"
             android:textColor="@color/colorEditViewProfil" />
 
     </LinearLayout>
@@ -75,7 +75,7 @@
             android:gravity="left"
             android:paddingLeft="20dp"
             android:paddingTop="9dp"
-            android:text="Date de naissance"
+            android:hint="Date de naissance"
             android:textColor="@color/colorEditViewProfil" />
 
     </LinearLayout>
