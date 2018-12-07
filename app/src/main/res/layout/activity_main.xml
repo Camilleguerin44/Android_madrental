@@ -76,7 +76,25 @@
             android:paddingLeft="20dp"
             android:paddingTop="9dp"
             android:hint="Date de naissance"
-            android:textColor="@color/colorEditViewProfil" />
+            android:textColor="@color/colorEditViewProfil"
+            android:id="@+id/ddn"/>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/buttonview"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ddn"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAllCaps="false"
+            android:text="Valider"
+            android:textColor="@color/colorTextbutton"
+            android:textSize="25dp"
+            />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

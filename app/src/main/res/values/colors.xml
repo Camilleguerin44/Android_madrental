@@ -6,5 +6,6 @@
     <color name="colorRadius">#cacaca</color>
     <color name="colorEditViewProfil">#8a8a8a</color>
     <color name="colorTextViewProfil">#000000</color>
-    <color name="ColorTextbutton">#ffffff</color>
+    <color name="colorTextbutton">#ffffff</color>
+    <color name="colormadrental">#d00000</color>
 </resources>
