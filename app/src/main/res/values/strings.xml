@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Mon profil</string>
+    <string name="app_name1">Mon profil</string>
+    <string name="reservation2_textcentral">Merci de saisir ici\n vos demandes\n spécifiques :</string>
 </resources>
