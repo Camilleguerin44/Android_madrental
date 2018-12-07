@@ -1,18 +1,13 @@
 package com.example.activity.madrental;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class PrincipalActivity extends AppCompatActivity {
-
-    //Constantes :
-    private static final String CHEMIN_FONT = "font/Hansief.otf";
-
-
-    //Vues
-    private TextView textViewLegende = null;
 
 
     @Override
@@ -20,10 +15,11 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        //Police de la page principal
+    }
 
-        Typeface typeface = Typeface.createFromAsset(getAssets(), CHEMIN_FONT);
-        textViewLegende.setTypeface(typeface);
-
+    public void onClickbuttonProfil(View view) {
+        // affichage de la page détail :
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

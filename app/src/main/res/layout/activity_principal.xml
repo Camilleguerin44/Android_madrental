@@ -1,117 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PrincipalActivity">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:paddingTop="15dp"
-        android:text="Mad Rental"
-        android:textSize="50dp"
-        android:textStyle="italic"
-        android:textColor="@color/colormadrental"
-        />
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
-        android:background="@drawable/buttonview"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:textAllCaps="false"
-        android:text="Mon profil"
-        android:textColor="@color/colorTextbutton"
-        android:textSize="25dp"
-        />
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:background="@drawable/buttonview"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:text="Mes réservations"
-        android:textAllCaps="false"
-        android:textColor="@color/colorTextbutton"
-        android:textSize="25dp"
-        />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Lancer une recherche :"
-        android:textColor="@color/colorTextViewProfil"
-        android:paddingTop="20dp"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="300dp"
-            android:background="@drawable/edittext"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="Mad Rental"
+            android:textColor="@color/colormadrental"
+            android:textSize="50dp"
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonview"
+            android:text="Mes réservations"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextbutton"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/mon_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonview"
+            android:onClick="onClickbuttonProfil"
+            android:text="Mon profil"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextbutton"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:hint="Date de début de réservation"
-            android:textColor="@color/colorEditViewProfil" />
+            android:paddingTop="40dp"
+            android:text="Lancer une recherche :"
+            android:textColor="@color/colorTextViewProfil"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="Date de début de réservation"
+                android:textColor="@color/colorEditViewProfil"
+
+                />
+
+
+            <EditText
+                android:id="@+id/date_resa"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="Date de fin de réservation"
+                android:textColor="@color/colorEditViewProfil" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/buttonview"
+            android:text="Rechercher"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextbutton"
+            android:textSize="25dp" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="360dp"
-            android:background="@drawable/edittext"
-            android:gravity="center"
-            android:hint="Date de fin de réservation"
-            android:textColor="@color/colorEditViewProfil" />
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="430dp"
-        android:background="@drawable/buttonview"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:textAllCaps="false"
-        android:text="Rechercher"
-        android:textColor="@color/colorTextbutton"
-        android:textSize="25dp"
-        />
-
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>
